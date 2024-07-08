@@ -26,16 +26,22 @@
     var(--brand-color-primary) 100%
   );
   --btn-color: var(--bg-color);
+
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--btn-color);
 }
 
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: var(--fs-sm);
 }
+
 .btn-md {
   padding: 0.75rem 1.5rem;
   font-size: var(--fs-base);
 }
+
 .btn-lg {
   padding: 1rem 2rem;
   font-size: 1.125rem;
@@ -60,5 +66,16 @@
     color: transparent;
     position: relative;
     z-index: 1;
+  }
+}
+
+@media (width >= 80em) {
+  .btn-sm {
+    padding: 0.75rem 1.5rem;
+    font-size: var(--fs-base);
+  }
+  .btn-md {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
   }
 }
