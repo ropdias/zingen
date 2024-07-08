@@ -1,0 +1,53 @@
+#pricing {
+  --fs-price: 2rem;
+
+  & header {
+    text-align: center;
+  }
+
+  & .cards {
+    margin-top: 2rem;
+  }
+
+  & h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  & .card p {
+    margin-top: 0.25rem;
+  }
+
+  & zin-pricing {
+    display: block;
+    padding-block: 1.5rem;
+    font: var(--fw-bold) var(--fs-price) / 1.2 var(--ff-sans);
+  }
+
+  & zin-pricing small {
+    font: var(--fw-base) 1rem/125% var(--ff-sans);
+    color: var(--text-color-secondary);
+  }
+
+  & .btn {
+    width: 100%;
+  }
+
+  & .separator {
+    height: 1px;
+    margin-block: 2rem;
+    background: radial-gradient(
+      var(--text-color-secondary),
+      var(--surface-color) 70%
+    );
+  }
+
+  @media (width >= 80em) {
+    --fs-price: 2.5rem;
+
+    & header {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+  }
+}
